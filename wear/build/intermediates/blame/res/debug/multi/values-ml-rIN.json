@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\values-ml-rIN\\values-ml-rIN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 101,
+                    "endOffset": 152
+                },
+                "from": {
+                    "file": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\2.0.0-alpha1\\res\\values-ml-rIN\\values-ml-rIN.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 101,
+                        "endOffset": 356
+                    }
+                }
+            }
+        ]
+    }
+]

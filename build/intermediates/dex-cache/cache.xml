@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_3aa048f15ad9d7dbdfb79a39dc892fe2dd150141\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_de87742c31c977a5a97f2b7f4c1663ca9c1eadd9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="d95955663a09668e3c18ef4bd27c4148d5a35230">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_11f6a47f4a986ad6b0f2f53ff0dd967406789e2f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.android.support\wearable\2.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="198f86964d1fe34215742672a4e095f916f0f4d9">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.support-wearable-2.0.0-alpha1_2a4e50ebb151a23b961dacfd5b52bd8c953295b6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="de4f5909b5ad3983a5b7e68f30e35b8e6777bd3a">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6522a5ca8cbb0a5ba678a3fba390027b672dd19a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="764d32faf85bc6f7bd2cdcb3a70a482c1884fdd2">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.0.2_6f8ddb0beb859670262d5cd4ff81ecb4b004562e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.0.1_0289051a87c20db8531835f98556e8731ac3ce28\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_f528229c28fc117cfa2b856d15f07e8aa56250e7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_6e90916d4023e23bbd938f0eb327384e97adeddc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_a4ddf2e78cc0773a62933eb7603203b116df7035\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_869646a1f24c5e9053e6659579a7a3dce027d811\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.0"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_541722d0d17b3e80dd0166e64e68832db41a9688\classes.dex" />
+    </item>
+
+</items>

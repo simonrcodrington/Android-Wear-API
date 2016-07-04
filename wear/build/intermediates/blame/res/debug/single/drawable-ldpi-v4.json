@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_cloud.png",
+        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_cloud.png"
+    },
+    {
+        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\wave.png",
+        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\wave.png"
+    },
+    {
+        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
+    }
+]
