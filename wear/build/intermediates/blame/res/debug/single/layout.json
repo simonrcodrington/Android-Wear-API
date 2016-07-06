@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\overlay_confirmation.xml",
-        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\2.0.0-alpha1\\res\\layout\\overlay_confirmation.xml"
-    },
-    {
         "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\error_layout.xml",
         "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\2.0.0-alpha1\\res\\layout\\error_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\overlay_confirmation.xml",
+        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\2.0.0-alpha1\\res\\layout\\overlay_confirmation.xml"
     },
     {
         "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",

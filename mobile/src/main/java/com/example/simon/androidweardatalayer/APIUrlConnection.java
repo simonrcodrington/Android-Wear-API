@@ -34,7 +34,6 @@ public class APIUrlConnection {
             result.put("type", "success");
             result.put("data", stringBuilder.toString());
 
-
         }catch(Exception e){
 
             e.printStackTrace();

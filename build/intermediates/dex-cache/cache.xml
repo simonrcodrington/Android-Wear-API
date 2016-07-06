@@ -19,7 +19,7 @@
         jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.0"
-        sha1="d95955663a09668e3c18ef4bd27c4148d5a35230">
+        sha1="816d505837792eeb9f19581923799932da0ecd0a">
         <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_11f6a47f4a986ad6b0f2f53ff0dd967406789e2f\classes.dex" />
     </item>
     <item
@@ -33,7 +33,7 @@
         jar="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.0"
-        sha1="de4f5909b5ad3983a5b7e68f30e35b8e6777bd3a">
+        sha1="80c803cfcb8b498be5c82337693ed91263ef0a3e">
         <dex dex="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6522a5ca8cbb0a5ba678a3fba390027b672dd19a\classes.dex" />
     </item>
     <item

@@ -4,27 +4,35 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="46501135069272"
+    timestamp="136166536340829"
     token="-7856571900865424359" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="237" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="78" />
     <task
         name="verifier"
-        duration="0" />
+        duration="13" />
 
-    <build timestamp="43100316444844" >
+    <artifact
+        location="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+        type="DEX" />
+
+    <build timestamp="120989411064513" >
         <artifact
             location="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\outputs\apk\mobile-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="46501135069272" />
+    <build timestamp="136166536340829" >
+        <artifact
+            location="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
+            type="DEX" />
+    </build>
 
 </instant-run>
