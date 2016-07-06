@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="280dpi"
+    density="tvdpi"
     format="7"
-    timestamp="53202895917910"
+    timestamp="139662563291534"
     token="610070609429716360" >
 
     <task
         name="javac"
-        duration="234" />
+        duration="242" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="277" />
+        duration="249" />
     <task
         name="verifier"
-        duration="95" />
+        duration="87" />
 
     <artifact
         location="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\outputs\apk\wear-debug.apk"
         type="MAIN" />
 
-    <build timestamp="53202895917910" >
+    <build timestamp="139662563291534" >
         <artifact
             location="C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\wear\build\outputs\apk\wear-debug.apk"
             type="MAIN" />

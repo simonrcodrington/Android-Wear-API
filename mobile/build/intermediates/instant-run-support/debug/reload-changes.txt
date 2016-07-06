@@ -1,0 +1,4 @@
+CHANGED,C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\simon\androidweardatalayer\MainActivity$override.class
+CHANGED,C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\simon\androidweardatalayer\MainActivity$APIAsyncTask$override.class
+CHANGED,C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\simon\androidweardatalayer\APIUrlConnection$override.class
+CHANGED,C:\Users\simon\Documents\Android App Tests\AndroidWearDataLayer\mobile\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

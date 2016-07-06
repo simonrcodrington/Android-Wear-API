@@ -16,12 +16,12 @@
         "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xhdpi-v4\\common_ic_googleplayservices.png"
     },
     {
-        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
-    },
-    {
         "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\wave.png",
         "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\wave.png"
+    },
+    {
+        "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\simon\\Documents\\Android App Tests\\AndroidWearDataLayer\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_full_sad.png",

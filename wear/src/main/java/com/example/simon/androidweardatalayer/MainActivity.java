@@ -2,8 +2,6 @@ package com.example.simon.androidweardatalayer;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.wearable.view.WatchViewStub;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -25,7 +23,7 @@ import com.google.android.gms.wearable.Wearable;
 
 import java.util.Date;
 
-//WEARABLE
+//Wearable Layout
 public class MainActivity extends Activity implements
         DataApi.DataListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
@@ -38,24 +36,41 @@ public class MainActivity extends Activity implements
     private RelativeLayout overlay;
     private Button apiButton;
 
+    //on successful connection to play services, add data listner
+    public void onConnected(Bundle connectionHint) {
+        Wearable.DataApi.addListener(googleClient, this);
+    }
 
-    protected void onStart() {
-        super.onStart();
+    //on resuming activity, reconnect play services
+    public void onResume(){
+        super.onResume();
         googleClient.connect();
     }
 
-    protected void onStop() {
-        super.onStop();
+    //on suspended connection, remove play services
+    public void onConnectionSuspended(int cause) {
+        Wearable.DataApi.removeListener(googleClient, this);
+    }
+
+    //pause listener, disconnect play services
+    public void onPause(){
+        super.onPause();
         Wearable.DataApi.removeListener(googleClient, this);
         googleClient.disconnect();
     }
+
+    //On failed connection to play services, remove the data listener
+    public void onConnectionFailed(ConnectionResult result) {
+        Wearable.DataApi.removeListener(googleClient, this);
+    }
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //data layer
+        //set up our google play services client
         googleClient = new GoogleApiClient.Builder(this)
                 .addApi(Wearable.API)
                 .addConnectionCallbacks(this)
@@ -81,7 +96,7 @@ public class MainActivity extends Activity implements
 
                 //start API request to phone
                 PutDataMapRequest putDataMapRequest = PutDataMapRequest.create("/apiurl");
-                putDataMapRequest.getDataMap().putString("message", "this is a message from android wear!");
+                putDataMapRequest.getDataMap().putString("message", "This is a message from Android Wear, connect to the API");
                 putDataMapRequest.getDataMap().putLong("time", new Date().getTime());
                 PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();
                 putDataRequest.setUrgent();
@@ -138,22 +153,5 @@ public class MainActivity extends Activity implements
             }
         }
     }
-
-    public void onConnected(Bundle connectionHint) {
-        Wearable.DataApi.addListener(googleClient, this);
-    }
-
-    public void onConnectionSuspended(int cause) {
-    }
-
-    public void onConnectionFailed(ConnectionResult result) {
-
-    }
-
-
-
-
-
-
 
 }

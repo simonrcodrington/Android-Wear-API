@@ -22,6 +22,7 @@ public class APIInformation {
     public void setAPIArgument(String key, String value){
         this.APIArguments.put(key, value);
     }
+
     //gets a single API argument from the arg list
     public String getAPIArgument(String key){
         String value = APIArguments.get(key);

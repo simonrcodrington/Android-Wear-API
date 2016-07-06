@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-//MOBILE
+//Mobile Profile
 public class MainActivity extends AppCompatActivity implements
         DataApi.DataListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
@@ -45,15 +45,32 @@ public class MainActivity extends AppCompatActivity implements
     private GoogleApiClient googleClient;
     private TextView messageContainer;
 
-    protected void onStart() {
-        super.onStart();
+    //on successful connection to play services, add data listner
+    public void onConnected(Bundle connectionHint) {
+        Wearable.DataApi.addListener(googleClient, this);
+    }
+
+    //on resuming activity, reconnect play services
+    public void onResume(){
+        super.onResume();
         googleClient.connect();
     }
 
-    protected void onStop() {
-        super.onStop();
+    //on suspended connection, remove play services
+    public void onConnectionSuspended(int cause) {
+        Wearable.DataApi.removeListener(googleClient, this);
+    }
+
+    //pause listener, disconnect play services
+    public void onPause(){
+        super.onPause();
         Wearable.DataApi.removeListener(googleClient, this);
         googleClient.disconnect();
+    }
+
+    //On failed connection to play services, remove the data listener
+    public void onConnectionFailed(ConnectionResult result) {
+        Wearable.DataApi.removeListener(googleClient, this);
     }
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
 
+    //watches for data item
     public void onDataChanged(DataEventBuffer dataEvents) {
         for(DataEvent event: dataEvents){
 
@@ -82,14 +100,11 @@ public class MainActivity extends AppCompatActivity implements
                 DataItem item = event.getDataItem();
                 DataMapItem dataMapItem = DataMapItem.fromDataItem(item);
 
+                //received initiation message, start the process!
                 if(item.getUri().getPath().equals("/apiurl")){
 
-                    Log.d("debug", "caught message passed to me by the wearable");
 
                     String message = dataMapItem.getDataMap().getString("message");
-
-
-                    Log.d("debug", "here is the message: " + message);
                     messageContainer.setText(message);
 
                     //BUILD API ARGUMENTS
@@ -101,41 +116,11 @@ public class MainActivity extends AppCompatActivity implements
                     APIAsyncTask asyncTask = new APIAsyncTask();
                     asyncTask.execute(apiInformation);
 
-                    //now push back  message to wearable
-                    //this.pushMessageToWearable();
                 }
             }
         }
     }
 
-
-    //push a message to wearable
-    public void pushMessageToWearable(){
-
-        PutDataMapRequest putDataMapRequest = PutDataMapRequest.create("/responsemessage");
-        putDataMapRequest.getDataMap().putString("message", "this is a response back from mobile");
-        putDataMapRequest.getDataMap().putLong("time", new Date().getTime());
-        PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();
-        putDataRequest.setUrgent();
-
-        Log.d("debug", "Created message and pushed it back to wearable");
-
-        PendingResult<DataApi.DataItemResult> pendingResult = Wearable.DataApi.putDataItem(googleClient, putDataRequest);
-    }
-
-    public void onConnected(Bundle connectionHint) {
-        Log.d("debug", "onConnected: " + connectionHint);
-        Wearable.DataApi.addListener(googleClient, this);
-    }
-
-    public void onConnectionSuspended(int cause) {
-        Log.d("debug", "onConnectionSuspended: " + cause);
-    }
-
-    public void onConnectionFailed(ConnectionResult result) {
-        Log.d("debug", "onConnectionFailed: " + result);
-
-    }
 
     //checks to see if we are online (and can access the net)
     protected boolean isOnline(){
@@ -201,7 +186,6 @@ public class MainActivity extends AppCompatActivity implements
 
             }else{
                 //we're not online, flag the error
-                Log.d("debug", "Error, not currently online, cant connect to API");
                 result = new HashMap();
                 result.put("type", "failure");
                 result.put("data", "Not currrently online, can't connect to API");
@@ -236,7 +220,9 @@ public class MainActivity extends AppCompatActivity implements
                         //loop through all 'heights' objects to get data
 
                         for(int i = 0; i < heights.length(); i++){
+                            //get the specific object from the set
                             JSONObject heightObject = heights.getJSONObject(i);
+                            //get our time and height values
                             Integer unixTime = Integer.parseInt(heightObject.getString("dt"));
                             String height = heightObject.getString("height");
 
@@ -258,6 +244,7 @@ public class MainActivity extends AppCompatActivity implements
                     }
 
                 }catch(Exception e){
+                    //couldn't create the JSON object
                     Log.d("error", "error creating the json object: " + e.getMessage());
                     putDataMapRequest.getDataMap().putString("error", "There was an issue processing the JSON object returned from API");
                 }
@@ -268,7 +255,6 @@ public class MainActivity extends AppCompatActivity implements
                 Log.d("error", "There was an issue connecting to the API.");
                 putDataMapRequest.getDataMap().putString("error", result.get("error").toString());
             }
-
 
             //finalise our message and send it off (either success or failure)
             PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();
